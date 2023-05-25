@@ -9,9 +9,18 @@
   line-height: 23px;
   text-decoration: none;
   color: #fffbe9;
+  transition: 0.5s;
 }
 .navWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px;
+}
+.navBur {
+  box-sizing: border-box;
+  background-color: #ceab93;
+}
+.active {
+  color: #ddd8d8 !important;
 }

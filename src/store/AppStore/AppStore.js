@@ -2,7 +2,7 @@ import { makeAutoObservable } from "mobx";
 
 const appStore = () => {
   return makeAutoObservable({
-    auth: false,
+    auth: localStorage.getItem("auth") ? true : false,
 
     setAuth() {
       this.auth = !this.auth;

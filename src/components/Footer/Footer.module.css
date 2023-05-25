@@ -1,0 +1,12 @@
+.footer {
+  padding: 10px;
+  background-color: #ad8b73;
+}
+.futFlex {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  text-align: right;
+  color: white;
+}

@@ -1,8 +1,8 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 300px;
-  margin-top: 50px;
+  grid-template-rows: 1fr;
+
   gap: 60px;
 }
 .cardsItem {
@@ -22,4 +22,26 @@
   color: white;
   background-color: #a18572;
   text-decoration: none;
+  transition: 0.5s;
+}
+.link:hover {
+  background-color: #b69782;
+}
+.cardLogo {
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.cardLogo img {
+  width: 100%;
+  height: auto;
+}
+.cardsWrapper {
+  min-height: 90vh;
+  background-color: #dddddd;
+}
+.title {
+  margin: 0;
+  padding: 20px 0;
 }

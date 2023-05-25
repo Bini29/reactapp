@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Cards from "./components/Cards/Cards";
 import NoMatch from "./pages/NoMatch/NoMatch";
 import { useStore } from "./store/index";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   let navigate = useNavigate();
@@ -31,6 +32,7 @@ function App() {
         <Route path="/schedule" element={<Schedule />}></Route>
         <Route path="*" element={<NoMatch />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
