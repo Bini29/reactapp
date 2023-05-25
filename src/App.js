@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import AuthPage from "./pages/Auth/AuthPage";
+import AuthPage from "./pages/AuthPage/AuthPage";
 import Journal from "./pages/Journal/Journal";
 import Reports from "./pages/Reports/Reports";
 import Schedule from "./pages/Schedule/Schedule";
