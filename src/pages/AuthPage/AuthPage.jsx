@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg";
 import { observer } from "mobx-react-lite";
 import styles from "./AuthPage.module.css";
 import { useNavigate } from "react-router-dom";
+
 const AuthPage = observer(() => {
   const { appStore } = useStore();
   const [login, setLogin] = useState("Kubashin");
@@ -15,6 +16,7 @@ const AuthPage = observer(() => {
     if (login === "Kubashin" && password === "Kubashin") {
       localStorage.setItem("auth", true);
       navigate("/");
+      appStore.setAuth(true);
     } else {
       setError(true);
     }
