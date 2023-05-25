@@ -9,6 +9,7 @@ import Cards from "./components/Cards/Cards";
 import NoMatch from "./pages/NoMatch/NoMatch";
 import { useStore } from "./store/index";
 import Footer from "./components/Footer/Footer";
+import Total from "./pages/Total/Total";
 
 function App() {
   let navigate = useNavigate();
@@ -30,6 +31,7 @@ function App() {
         <Route path="/auth" element={<AuthPage />}></Route>
         <Route path="/reports" element={<Reports />}></Route>
         <Route path="/schedule" element={<Schedule />}></Route>
+        <Route path="/total" element={<Total />}></Route>
         <Route path="*" element={<NoMatch />}></Route>
       </Routes>
       <Footer />

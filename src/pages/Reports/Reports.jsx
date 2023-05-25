@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Reports.module.css";
-
+import { Link } from "react-router-dom";
 const Reports = () => {
   return (
     <div className={styles.reports}>
@@ -10,13 +10,13 @@ const Reports = () => {
           <span>Итоги успеваимости</span>
           <ul>
             <li>
-              <a href="#"> Итоговые отметки</a>
+              <Link to="/total"> Итоговые отметки</Link>
             </li>
             <li>
-              <a href="#"> Средний балл</a>
+              <Link to="/total123"> Средний балл</Link>
             </li>
             <li>
-              <a href="#"> Динамика среднего балла ученика</a>
+              <Link to="/total111"> Динамика среднего балла ученика</Link>
             </li>
           </ul>
         </div>
