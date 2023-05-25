@@ -7,14 +7,14 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import Cards from "./components/Cards/Cards";
 import NoMatch from "./pages/NoMatch/NoMatch";
+import { useStore } from "./store/index";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false);
   let navigate = useNavigate();
+  const { appStore } = useStore();
 
   useEffect(() => {
-    if (localStorage.getItem("auth")) {
-      setIsAuth(true);
+    if (appStore.auth) {
     } else {
       navigate("/auth");
     }
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      {isAuth ? <Navigation /> : null}
+      {appStore.auth ? <Navigation /> : null}
       <Routes>
         <Route path="/" element={<Cards />}></Route>
         <Route path="/jornal" element={<Journal />}></Route>
